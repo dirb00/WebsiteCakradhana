@@ -28,6 +28,15 @@ body{
     z-index: 200;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
 .menu {
     margin: auto 0;
     text-decoration: none;
@@ -99,6 +108,17 @@ body{
 }
 
 
-.promo {
-    
+h1.promo {
+    float: right;
+    margin-right: 20px;
+    width: 50%;
+}
+
+p.promo{
+    float: right;
+    display: flex;
+    font-size: 1.2rem;
+    margin-top: 100px;
+    margin-right: 20px;
+    width: 40%;
 }
