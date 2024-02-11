@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    padding: 2opx 100px;
+    display: flex;
+    justify-content: space-between;
+
+    background: rgb(58,120,192);
+    background: linear-gradient(90deg, rgba(58,120,192,1) 5%, rgba(182,60,60,1) 100%);
+    z-index: 200;
+}
+
+.menu {
+    margin: auto 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    color: white;
+    gap: 100px;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.left{
+    color: white;
+    font-size: 1.2rem;
+    
+    padding-top: 2px;
+    margin-top: 25px;
+    float: left;
+    width: 45%;
+    background: rgb(40,83,134);
+    background: linear-gradient(144deg, rgba(40,83,134,1) 5%, rgba(34,68,108,1) 100%);
+}
+
+.profil1, .profil2,.title {
+    margin-left: 5px;
+}
+
+.right{
+    
+    float: right;
+    width: 20%;
+}
+
+.right-b {
+    margin-right: 0;
+    text-align: right;
+    float: right;
+}
+
+.gedbun{
+    height: 650px;
+}
+
+.images{
+    margin-top: 20px;
+    margin: auto;
+    display:contents;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.kurnas{
+    margin-left: 2rem;
+    width: 100px;
+}
+
+.camb{
+    width: 100px;
+    margin-left: 6rem;
+    margin-top: 20px;
+}
+
+.osn{
+    width: 100px;
+    margin-left: 6rem;
+}
+
+
+.promo {
+    
+}
