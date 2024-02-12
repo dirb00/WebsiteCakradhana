@@ -11,6 +11,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .header {
@@ -31,6 +32,7 @@ body{
 a {
     text-decoration: none;
     color: white;
+    transition: all ease-out 200ms;
 }
 
 a:hover {
@@ -38,7 +40,9 @@ a:hover {
 }
 
 .menu {
-    margin: auto 0;
+    margin-top: auto ;
+    margin-bottom: auto;
+    margin-right: 10px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
@@ -49,76 +53,113 @@ a:hover {
 
 .wrapper{
     display: flex;
+    max-height: 700px;
+    background: rgb(40,83,134);
+    background: linear-gradient(144deg, rgba(40,83,134,1) 5%, rgba(34,68,108,1) 100%);
 }
 
 .left{
     color: white;
     font-size: 1.2rem;
-    
+    margin-right: 10px;
     padding-top: 2px;
     margin-top: 40px;
+    
     float: left;
-    width: 45%;
-    background: rgb(40,83,134);
-    background: linear-gradient(144deg, rgba(40,83,134,1) 5%, rgba(34,68,108,1) 100%);
+    width:55.8%;
+    
 }
 
 .profil1, .profil2,.title {
-    margin-left: 5px;
+    margin-left: 15px;
+    width: 98%;
 }
 
 .right{
-    
+    display: flex;
     float: right;
-    width: 20%;
+    margin-right: 0;
+}
+
+
+/* .gedbun{
+    margin-top: 40px;
+    margin-right: 0;
+    display: flexbox;
+    height: 100%;
+} */
+
+.images{
+    
+    
+    display:contents;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+
+.kurnas{
+    margin-left: 2rem;
+    margin-bottom: 25px;
+    width: 100px;
+}
+
+.camb{
+    width: 100px;
+    margin-left: 10rem;
+    margin-top: 20px;
+}
+
+.osn{
+    width: 100px;
+    margin-bottom: 25px;
+    margin-left: 10rem;
 }
 
 .right-b {
     margin-right: 0;
     text-align: right;
     float: right;
-}
-
-.gedbun{
-    height: 650px;
-}
-
-.images{
-    margin-top: 20px;
-    margin: auto;
-    display:contents;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.kurnas{
-    margin-left: 2rem;
-    width: 100px;
-}
-
-.camb{
-    width: 100px;
-    margin-left: 6rem;
-    margin-top: 20px;
-}
-
-.osn{
-    width: 100px;
-    margin-left: 6rem;
+    width: 40%;
 }
 
 
 h1.promo {
     float: right;
+    font-size: 2rem;
     margin-right: 20px;
-    width: 50%;
+    width: 70%;
 }
 
 p.promo{
     float: right;
     display: flex;
     font-size: 1.2rem;
-    margin-top: 100px;
+    
     margin-right: 20px;
+    
+}
+
+.left-b {
+    margin-top: 0;
+    margin-left: 120px;
     width: 40%;
+    float: left;
+}
+
+.mockup {
+    float: left;
+    max-width: 400px;
+}
+
+.daftar{
+    text-align: right;
+    display: flex;
+    margin-top: 200px;
+    color: black;
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
 }
