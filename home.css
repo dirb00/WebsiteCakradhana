@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 *,
 *::after,
@@ -20,7 +21,7 @@ body{
     left: 0;
     height: 60px;
     width: 100%;
-    padding: 2opx 100px;
+    padding: 2px 100px;
     display: flex;
     justify-content: space-between;
 
@@ -73,6 +74,12 @@ a:hover {
 .profil1, .profil2,.title {
     margin-left: 15px;
     width: 98%;
+}
+
+.title {
+    white-space: pre-line;
+    /* font-family: 'DM Serif Display', sans-serif; */
+    /* letter-spacing: 0.05em; */
 }
 
 .right{
