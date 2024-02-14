@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>About Us | Cakradhana Nawasena</title>
+	<link rel="icon" type="image/x-icon" href="/bahan/simple.png">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<!-- Tailwind -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				fontFamily: {
+					main: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji']
+				},
+				extend: {
+					colors: {
+						'nav-blue': '#3a78c0',
+						'nav-red': '#b63c3c',
+						'main-blue': '#264d7c',
+						'bottompage-red-start': '#b53b3b',
+						'bottompage-red-end': '#892929',
+                        'cakra-red-start': '#823636',
+                        'cakra-red-end': '#612626'
+					}
+				}
+			}
+		}
+	</script>
+	<style type="text/tailwindcss">
+		@layer utilities {
+			.auto-fit-1 {
+				grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			}
+			.auto-fit-2 {
+				grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+			}
+			.hollow-slate-800 {
+				color: white;
+				text-shadow:
+				  3px 3px 0 rgb(0 0 0 / 0.24),
+				  -3px 3px 0 rgb(0 0 0 / 0.24),
+				  -3px -3px 0 rgb(0 0 0 / 0.24),
+				  3px -3px 0 rgb(0 0 0 / 0.24);
+			}
+		}
+	</style>
+
+	<!-- For people cards -->
+	<link rel="stylesheet" href="./people.css">
+
+	<!-- Animation library -->
+	<link rel="stylesheet" href="./animations.css">
+</head>
+<body class="m-0 p-0 font-main w-full min-h-screen">
+	<nav class="flex flex-row items-center px-6 py-3 text-slate-200 text-2xl font-bold w-full bg-gradient-to-r from-nav-red to-nav-blue">
+		<div id="logo" class="w-1/3">
+			<img src="/bahan/simple.png" class="aspect-auto max-w-[75px]">
+		</div>
+		<button id="hamburger" class="lg:hidden flex flex-column flex-1 justify-end">
+			<div class="space-y-2">
+				<div class="w-[40px] h-[4px] rounded-lg bg-white"></div>
+				<div class="w-[40px] h-[4px] rounded-lg bg-white"></div>
+				<div class="w-[40px] h-[4px] rounded-lg bg-white"></div>
+			</div>
+		</button>
+		<div id="nav" class="hidden lg:flex flex flex-row flex-1 justify-end space-x-8">
+			<a href="/">Home</a>
+			<a href="/news.html">News</a>
+			<a href="/about-us.html">About Us</a>
+		</div>
+	</nav>
+	<main class="flex flex-row items-center py-6 justify-center space-x-8 bg-gradient-to-r from-cakra-red-start to-cakra-red-end">
+		<div>
+			<img src="bahan/OSPK.png" class="aspect-auto rounded-md max-w-[400px]">
+		</div>
+		<div id="desc" class="flex flex-col justify-center text-justify">
+			<h1 class="font-bold text-6xl text-white">
+				Cakradhana Nawasena
+			</h1>
+			<p class="mt-1 mb-4 text-lg max-w-[70ch] text-white/80">
+                Pasukan tangguh elang muda yang semangat berani menciptakan perubahan dengan siap menghadirkan dampak nyata dan dampak yang besar bagi diri sendiri dan lingkungan untuk menjunjung masa depan cerah.
+			</p>
+            <a href="/program-kerja.html" class="text-2xl font-bold bg-white rounded-md w-fit p-3 hover:bg-slate-100">
+                Program Kerja
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>  
+            </a>
+		</div>
+	</main>
+	<section id="osis" class="flex flex-col my-8">
+        <div class="flex flex-col flex-1 items-center bg-red-600">
+            <div class="p-6">
+				<h1 class="w-fit text-6xl font-bold text-white -skew-y-[12deg]">
+					OSIS
+				</h1>
+			</div>
+        </div>
+        <main id="bph" class="flex flex-col justify-center items-center space-y-10">
+            <section class="flex flex-col justify-center items-center flex-1 mt-6 relative">
+				<h1 class="text-3xl font-semibold z-20">
+					Badan Pengurus Harian
+				</h1>
+				<div class="mx-8 grid auto-fit-1 gap-4 w-2/3">
+					<div>
+						<img src="./bahan/01 KETUA UMUM OSIS.png">
+					</div>
+					<div>
+						<img src="./bahan/02 KETUA BIDANG I.png">
+					</div>
+					<div>
+						<img src="./bahan/03 KETUA BIDANG II.png">
+					</div>
+					<div>
+						<img src="./bahan/04 SEKRETARIS.png">
+					</div>
+					<div>
+						<img src="./bahan/05 HUMAS.png">
+					</div>
+					<div>
+						<img src="./bahan/07 K3OR.png">
+					</div>
+				</div>
+				<div id="side-text" class="absolute -left-[8rem] -bottom-[50%] rotate-90">
+					<h1 class="hidden xl:block text-[12rem] hollow-slate-800 select-none">
+						BPH
+					</h1>
+				</div>
+			</section>
+			<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="kalila" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Bendahara I
+						</h1>
+						<h3 class="text-lg">
+							Kalila Bea Devinya
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="safa" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Bendahara II
+						</h1>
+						<h3 class="text-lg">
+							Safa Alzena Riszy
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="clarissa" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Ketua Bidang II
+						</h1>
+						<h3 class="text-lg">
+							Clarissa Aurelia Nahid Saputra
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="haikal" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Ketua Umum
+						</h1>
+						<h3 class="text-lg">
+							Haikal Adrian Fathony
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="gisela" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Ketua Bidang I
+						</h1>
+						<h3 class="text-lg">
+							Gisela Andita Indarto
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="aprila" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Sekretaris I
+						</h1>
+						<h3 class="text-lg">
+							Aprila Yusr Artanti
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="adelia" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Sekretaris II
+						</h1>
+						<h3 class="text-lg">
+							Adelia Nasywa Ramadhani
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="addia" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Humas I
+						</h1>
+						<h3 class="text-lg">
+							Addia Lubna Humairaa Mulyawan
+						</h3>
+					</div>
+				</div>
+				<div class="flex flex-col space-y-2 text-center">
+					<div id="reval" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+					<div>
+						<h1 class="text-xl font-semibold">
+							Humas II
+						</h1>
+						<h3 class="text-lg">
+							Reval Aqeela
+						</h3>
+					</div>
+				</div>
+			</section>
+        </main>
+    </section>
+	<nav class="flex flex-row bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end divide-x text-white">
+		<header class="flex flex-column justify-center items-center mx-8">
+			<h1 class="text-4xl font-bold">
+				Contact Us<i>!</i>
+			</h1>
+		</header>
+		<main class="flex flex-col justify-center items-center flex-1 divide-y">
+			<section class="flex flex-row w-full flex-1 p-4">
+				<div id="instagram" class="flex flex-row justify-center items-center space-x-3 flex-1">
+					<div>
+						<img src="./bahan/instagram.png" class="max-w-[40px]">
+					</div>
+					<div class="text-slate-50 text-xl">
+						<h3>
+							@osismpkthamrin
+						</h3>
+						<h3>
+							@smanumht
+						</h3>
+					</div>
+				</div>
+				<div id="email" class="flex flex-row flex-1 justify-center items-center space-x-3">
+					<div>
+						<img src="./bahan/email.png" class="max-w-[40px]">
+					</div>
+					<div class="text-slate-50 text-xl">
+						<h3>
+							osismhthamrin@gmail.com
+						</h3>
+						<h3>
+							smanu_mht@yahoo.co.id
+						</h3>
+					</div>
+				</div>
+			</section>
+			<div class="flex flex-col w-full flex-1 text-slate-200/95 p-4 items-center">
+				<h3>
+					Jl. Bambu Wulung No.7, RT.7/RW.5, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890
+				</h3>
+			</div>
+		</main>
+	</nav>
+</body>
+</html>

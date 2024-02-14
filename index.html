@@ -4,13 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>Cakradhana Nawasena</title>
+	<title>Home | Cakradhana Nawasena</title>
 	<link rel="icon" type="image/x-icon" href="/bahan/simple.png">
 
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+	<!-- Tailwind -->
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
 		tailwind.config = {
@@ -22,7 +24,9 @@
 					colors: {
 						'nav-blue': '#3a78c0',
 						'nav-red': '#b63c3c',
-						'main-blue': '#264d7c'
+						'main-blue': '#264d7c',
+						'bottompage-red-start': '#b53b3b',
+						'bottompage-red-end': '#892929',
 					}
 				}
 			}
@@ -33,16 +37,16 @@
 <body class="m-0 p-0 font-main w-full min-h-screen">
 	<nav class="flex flex-row items-center px-6 py-3 text-slate-200 text-2xl font-bold w-full bg-gradient-to-r from-nav-red to-nav-blue">
 		<div id="logo" class="w-1/3">
-			<img src="/bahan/simple.png" class="aspect-auto max-w-[3vw]">
+			<img src="/bahan/simple.png" class="aspect-auto max-w-[75px]">
 		</div>
-		<button id="hamburger" class="w-1/3 flex flex-column justify-center">
+		<button id="hamburger" class="lg:hidden flex flex-column flex-1 justify-end">
 			<div class="space-y-2">
 				<div class="w-[40px] h-[4px] rounded-lg bg-white"></div>
 				<div class="w-[40px] h-[4px] rounded-lg bg-white"></div>
 				<div class="w-[40px] h-[4px] rounded-lg bg-white"></div>
 			</div>
 		</button>
-		<div id="nav" class="w-1/3 flex flex-row justify-end space-x-8">
+		<div id="nav" class="hidden lg:flex flex flex-row flex-1 justify-end space-x-8">
 			<a href="/">Home</a>
 			<a href="/news.html">News</a>
 			<a href="/about-us.html">About Us</a>
@@ -50,14 +54,13 @@
 	</nav>
 	<main class="flex flex-row items-center py-6 justify-center space-x-8 bg-main-blue">
 		<div id="desc" class="text-justify">
-			<h1 class="font-bold text-6xl whitespace-pre-line text-white">
-				SMAN Unggulan M. H.
+			<h1 class="font-bold text-6xl whitespace-pre-line text-white">SMAN Unggulan M. H.
 				Thamrin
 			</h1>
-			<p class="my-3 text-lg max-w-[70ch] text-slate-300">
+			<p class="my-3 text-lg max-w-[70ch] text-white/80">
 				<i>SMAN Unggulan M. H. Thamrin</i> adalah sekolah sains yang berkomitmen untuk memberikan pendidikan berkualitas bagi peserta didik yang memiliki potensi dan kecerdasan istimewa, terutama di bidang sains. Oleh karena itu, sekolah ini mengaplikasikan tiga kurikulum: Nasional, Cambridge, dan Olimpiade.
 			</p>
-			<p class="my-3 text-lg max-w-[70ch] text-slate-300">
+			<p class="my-3 text-lg max-w-[70ch] text-white/80">
 				Sekolah ini menghasilkan peserta didik yang memiliki prestasi di berbagai bidang, sehingga lulusan-lulusan SMAN Unggulan M.H. Thamrin sekarang sudah berada di universitas-universitas penjuru dunia, seperti Oxford, UCLA, NTU, NUS, dll.
 			</p>
 			<div id="curriculum" class="flex flex-row my-8 justify-evenly">
@@ -81,8 +84,7 @@
 			<img src="bahan/Mockup.png" class="aspect-auto max-w-[25vw]">
 		</div>
 		<div id="desc" class="flex flex-col justify-center items-end text-right">
-			<h1 class="-mt-12 font-bold text-6xl whitespace-pre-line text-black">
-				Ikuti keseruan TOC 14 
+			<h1 class="font-bold text-6xl whitespace-pre-line text-black">Ikuti keseruan TOC 14 
 				dan JVLYN 8.0!
 			</h1>
 			<p class="my-3 text-lg max-w-[70ch] text-black/70">
@@ -91,12 +93,54 @@
 			<p class="my-3 text-lg max-w-[70ch] text-black/70">
 				Sekolah ini menghasilkan peserta didik yang memiliki prestasi di berbagai bidang, sehingga lulusan-lulusan SMAN Unggulan M.H. Thamrin sekarang sudah berada di universitas-universitas penjuru dunia, seperti Oxford, UCLA, NTU, NUS, dll.
 			</p>
-			<button class="w-fit flex rounded-3xl p-1 bg-gradient-to-r from-nav-red to-nav-blue">
+			<button class="w-fit flex rounded-3xl p-0.5 bg-gradient-to-r from-nav-red to-nav-blue">
 				<span class="rounded-3xl p-2 bg-slate-100 text-2xl font-bold">
 					Daftar Sekarang
 				</span>
 			</button>
 		</div>
 	</section>
+	<nav class="flex flex-row bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end divide-x text-white">
+		<header class="flex flex-column justify-center items-center mx-8">
+			<h1 class="text-4xl font-bold">
+				Contact Us<i>!</i>
+			</h1>
+		</header>
+		<main class="flex flex-col justify-center items-center flex-1 divide-y">
+			<section class="flex flex-row w-full flex-1 p-4">
+				<div id="instagram" class="flex flex-row justify-center items-center space-x-3 flex-1">
+					<div>
+						<img src="./bahan/instagram.png" class="max-w-[40px]">
+					</div>
+					<div class="text-slate-50 text-xl">
+						<h3>
+							@osismpkthamrin
+						</h3>
+						<h3>
+							@smanumht
+						</h3>
+					</div>
+				</div>
+				<div id="email" class="flex flex-row flex-1 justify-center items-center space-x-3">
+					<div>
+						<img src="./bahan/email.png" class="max-w-[40px]">
+					</div>
+					<div class="text-slate-50 text-xl">
+						<h3>
+							osismhthamrin@gmail.com
+						</h3>
+						<h3>
+							smanu_mht@yahoo.co.id
+						</h3>
+					</div>
+				</div>
+			</section>
+			<div class="flex flex-col w-full flex-1 text-slate-200/95 p-4 items-center">
+				<h3>
+					Jl. Bambu Wulung No.7, RT.7/RW.5, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890
+				</h3>
+			</div>
+		</main>
+	</nav>
 </body>
 </html>
