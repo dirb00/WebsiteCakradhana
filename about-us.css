@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.proker {
+    border: solid white;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 35px;
+}
+
+.proker:hover{
+    opacity: 70%;
+}
+
+.em2, .ig2 {
+    display:flex;
+}
+
+.contact{
+    margin-top: -50px;
+}
+
+.direction {
+    font-size: 1.3rem;
+}
+
+/* Headers */
+
+.header_bph{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    justify-content: left;
+    margin-left: -60%;
+
+}
+
+/* "mx-8 grid auto-fit-1 gap-4 w-2/3 */
+
+.logo_bph{
+    display: flex;
+}

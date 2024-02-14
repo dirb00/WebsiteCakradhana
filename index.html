@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" href="index.css">
 	<!-- Tailwind -->
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
@@ -57,10 +57,10 @@
 			<h1 class="font-bold text-6xl whitespace-pre-line text-white">SMAN Unggulan M. H.
 				Thamrin
 			</h1>
-			<p class="my-3 text-lg max-w-[70ch] text-white/80">
+			<p class="my-3 font-medium text-lg max-w-[70ch] text-white/100">
 				<i>SMAN Unggulan M. H. Thamrin</i> adalah sekolah sains yang berkomitmen untuk memberikan pendidikan berkualitas bagi peserta didik yang memiliki potensi dan kecerdasan istimewa, terutama di bidang sains. Oleh karena itu, sekolah ini mengaplikasikan tiga kurikulum: Nasional, Cambridge, dan Olimpiade.
 			</p>
-			<p class="my-3 text-lg max-w-[70ch] text-white/80">
+			<p class="my-3 font-medium text-lg max-w-[70ch] text-white/100">
 				Sekolah ini menghasilkan peserta didik yang memiliki prestasi di berbagai bidang, sehingga lulusan-lulusan SMAN Unggulan M.H. Thamrin sekarang sudah berada di universitas-universitas penjuru dunia, seperti Oxford, UCLA, NTU, NUS, dll.
 			</p>
 			<div id="curriculum" class="flex flex-row my-8 justify-evenly">
@@ -87,38 +87,55 @@
 			<h1 class="font-bold text-6xl whitespace-pre-line text-black">Ikuti keseruan TOC 14 
 				dan JVLYN 8.0!
 			</h1>
-			<p class="my-3 text-lg max-w-[70ch] text-black/70">
+			<p class="my-3 font-medium text-lg max-w-[70ch] text-black/70">
 				<i>SMAN Unggulan M. H. Thamrin</i> adalah sekolah sains yang berkomitmen untuk memberikan pendidikan berkualitas bagi peserta didik yang memiliki potensi dan kecerdasan istimewa, terutama di bidang sains. Oleh karena itu, sekolah ini mengaplikasikan tiga kurikulum: Nasional, Cambridge, dan Olimpiade.
 			</p>
-			<p class="my-3 text-lg max-w-[70ch] text-black/70">
+			<p class="my-3 text-lg font-medium max-w-[70ch] text-black/70">
 				Sekolah ini menghasilkan peserta didik yang memiliki prestasi di berbagai bidang, sehingga lulusan-lulusan SMAN Unggulan M.H. Thamrin sekarang sudah berada di universitas-universitas penjuru dunia, seperti Oxford, UCLA, NTU, NUS, dll.
 			</p>
-			<button class="w-fit flex rounded-3xl p-0.5 bg-gradient-to-r from-nav-red to-nav-blue">
-				<span class="rounded-3xl p-2 bg-slate-100 text-2xl font-bold">
-					Daftar Sekarang
-				</span>
+			<button class="daftar">
+				Daftar Sekarang
 			</button>
 		</div>
 	</section>
-	<nav class="flex flex-row bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end divide-x text-white">
+	<section class="flex flex-row items-center py-6 justify-center space-x-8">
+		
+		<div id="desc" class="flex flex-col justify-center items-end text-left">
+			<h1 class="merch">MHT Merch
+			</h1>
+			<p class="my-3 font-medium text-lg max-w-[70ch] text-black/70">
+				<i>SMAN Unggulan M. H. Thamrin</i> adalah sekolah sains yang berkomitmen untuk memberikan pendidikan berkualitas bagi peserta didik yang memiliki potensi dan kecerdasan istimewa, terutama di bidang sains. Oleh karena itu, sekolah ini mengaplikasikan tiga kurikulum: Nasional, Cambridge, dan Olimpiade.
+			</p>
+			<p class="my-3 text-lg font-medium max-w-[70ch] text-black/70">
+				Sekolah ini menghasilkan peserta didik yang memiliki prestasi di berbagai bidang, sehingga lulusan-lulusan SMAN Unggulan M.H. Thamrin sekarang sudah berada di universitas-universitas penjuru dunia, seperti Oxford, UCLA, NTU, NUS, dll.
+			</p>
+			<button class="daftar">
+				Daftar Sekarang
+			</button>
+		</div>
+		<div>
+			<img src="bahan/Mockup.png" class="aspect-auto max-w-[25vw]">
+		</div>
+	</section>
+	<nav class="flex flex-row bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end  text-white">
 		<header class="flex flex-column justify-center items-center mx-8">
 			<h1 class="text-4xl font-bold">
-				Contact Us<i>!</i>
+				Contact Us!
 			</h1>
 		</header>
-		<main class="flex flex-col justify-center items-center flex-1 divide-y">
+		<main class="flex flex-col justify-center items-center flex-1 ">
 			<section class="flex flex-row w-full flex-1 p-4">
 				<div id="instagram" class="flex flex-row justify-center items-center space-x-3 flex-1">
 					<div>
 						<img src="./bahan/instagram.png" class="max-w-[40px]">
 					</div>
 					<div class="text-slate-50 text-xl">
-						<h3>
+						<a class="ig1" href="https://www.instagram.com/osismpkthamrin/" target="_blank">
 							@osismpkthamrin
-						</h3>
-						<h3>
+						</a>
+						<a  class="ig2" href="https://www.instagram.com/smanumht/" target="_blank">
 							@smanumht
-						</h3>
+						</a>
 					</div>
 				</div>
 				<div id="email" class="flex flex-row flex-1 justify-center items-center space-x-3">
@@ -126,19 +143,29 @@
 						<img src="./bahan/email.png" class="max-w-[40px]">
 					</div>
 					<div class="text-slate-50 text-xl">
-						<h3>
+						<a class="em1" href="mailto: osismhthamrin@gmail.com">
 							osismhthamrin@gmail.com
-						</h3>
-						<h3>
+						</a>
+						<a class="em2" href="mailto: smanu_mht@yahoo.co.id">
 							smanu_mht@yahoo.co.id
-						</h3>
+						</a>
+					</div>
+				</div>
+				<div id="phone" class="flex flex-row flex-1 justify-center items-center space-x-3">
+					<div>
+						<img src="./bahan/phone.png" class="max-w-[40px]">
+					</div>
+					<div class="text-slate-50 text-xl">
+						<a>
+							021-84596769
+						</a>
 					</div>
 				</div>
 			</section>
-			<div class="flex flex-col w-full flex-1 text-slate-200/95 p-4 items-center">
-				<h3>
+			<div class="flex flex-col text-white w-full flex-1 text-slate-200/95 p-4 items-center">
+				<a class="direction" href="https://maps.app.goo.gl/NL9DGHosARnMcpR8A">
 					Jl. Bambu Wulung No.7, RT.7/RW.5, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890
-				</h3>
+				</a>
 			</div>
 		</main>
 	</nav>
