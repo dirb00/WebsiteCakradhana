@@ -42,13 +42,35 @@
 			.auto-fit-2 {
 				grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
 			}
+
 			.hollow-slate-800 {
 				color: white;
-				text-shadow:
-				  3px 3px 0 rgb(0 0 0 / 0.24),
-				  -3px 3px 0 rgb(0 0 0 / 0.24),
-				  -3px -3px 0 rgb(0 0 0 / 0.24),
-				  3px -3px 0 rgb(0 0 0 / 0.24);
+				background-color: white;
+				text-shadow: -2px -2px 0 rgb(0 0 0 / 0.24), 
+							2px -2px 0 rgb(0 0 0 / 0.24), 
+							-2px 2px 0 rgb(0 0 0 / 0.24), 
+							2px 2px 0 rgb(0 0 0 / 0.24);
+			}
+
+			.tw-dept-container {
+				@apply flex flex-col justify-center items-center space-y-10
+			}
+			.tw-division-container {
+				@apply flex flex-col justify-center items-center flex-1 relative space-y-8 w-full max-w-full overflow-hidden
+			}
+
+			.leftside-text-accessory {
+				left: calc(8rem - 17px);
+			}
+			.tw-leftside-text {
+				@apply absolute origin-top-left rotate-90 leftside-text-accessory m-auto hidden xl:block text-9xl hollow-slate-800 select-none
+			}
+
+			.rightside-text-accessory {
+				right: calc(8rem - 17px);
+			}
+			.tw-rightside-text {
+				@apply absolute origin-top-right -rotate-90 rightside-text-accessory m-auto hidden xl:block text-9xl hollow-slate-800 select-none
 			}
 		}
 	</style>
@@ -96,7 +118,7 @@
             </a>
 		</div>
 	</main>
-	<section id="osis" class="flex flex-col my-8">
+	<section id="osis" class="flex flex-col my-8 space-y-8">
         <div class="flex flex-col flex-1 items-center bg-red-600">
             <div class="p-6">
 				<h1 class="w-fit text-6xl font-bold text-white -skew-y-[12deg]">
@@ -104,35 +126,35 @@
 				</h1>
 			</div>
         </div>
-        <main id="bph" class="flex flex-col justify-center items-center space-y-10">
-            <section class="flex flex-col  items-center flex-1 mt-6 relative">
-				<h1 class="header_bph">
-					Badan Pengurus Harian
-				</h1>
-				<div class="mx-8 grid auto-fit-1 gap-4 w-2/3">
-					<div>
-						<img src="./bahan/01 KETUA UMUM OSIS.png">
-					</div>
-					<div>
-						<img src="./bahan/02 KETUA BIDANG I.png">
-					</div>
-					<div>
-						<img src="./bahan/03 KETUA BIDANG II.png">
-					</div>
-					<div>
-						<img src="./bahan/04 SEKRETARIS.png">
-					</div>
-					<div>
-						<img src="./bahan/05 HUMAS.png">
-					</div>
-					<div>
-						<img src="./bahan/07 K3OR.png">
-					</div>
-				</div>
-				<div id="side-text" class="absolute -left-[8rem] -bottom-[50%] rotate-90">
-					<h1 class="hidden xl:block text-[12rem] hollow-slate-800 select-none">
-						BPH
+        <main id="bph" class="tw-dept-container relative">
+            <section class="flex flex-row justify-center items-center flex-1 mt-6">
+				<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+					<h1 class="text-3xl font-bold text-center">
+						Badan Pengurus Harian
 					</h1>
+					<div class="mx-8 grid auto-fit-1 gap-4 w-2/3">
+						<div>
+							<img src="./bahan/01 KETUA UMUM OSIS.png">
+						</div>
+						<div>
+							<img src="./bahan/02 KETUA BIDANG I.png">
+						</div>
+						<div>
+							<img src="./bahan/03 KETUA BIDANG II.png">
+						</div>
+						<div>
+							<img src="./bahan/04 SEKRETARIS.png">
+						</div>
+						<div>
+							<img src="./bahan/06 BENDAHARA.png">
+						</div>
+						<div>
+							<img src="./bahan/05 HUMAS.png">
+						</div>
+					</div>
+					<div class="tw-leftside-text">
+						BPH
+					</div>
 				</div>
 			</section>
 			<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
@@ -237,8 +259,555 @@
 				</div>
 			</section>
         </main>
+		<main id="bidang1" class="tw-dept-container">
+			<h1 class="text-5xl font-bold">
+				<span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-gradient-to-r before:from-yellow-500 before:to-yellow-300 relative inline-block p-3">
+					<span class="relative text-white">Bidang I</span>
+				</span>
+			</h1>
+            <div class="tw-division-container">
+				<section class="flex flex-row justify-center items-center flex-1 mt-6 w-full">
+					<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+						<div class="mx-4">
+							<img src="./bahan/07 K3OR.png" class="aspect-auto max-w-[200px]">
+						</div>
+						<h1 class="text-3xl font-bold text-center">
+							Seksi Kreativitas, Keterampilan, Kewirausahaan, dan Olahraga
+						</h1>
+						<div class="tw-rightside-text">
+							K3OR
+						</div>
+					</div>
+				</section>
+				<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="ghaida" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Kasie K3OR
+							</h1>
+							<h3 class="text-lg">
+								Ghaida Afifah Dianti
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="habil" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								WaKasie K3OR
+							</h1>
+							<h3 class="text-lg">
+								Habil Mulia Ihsan
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="randra" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota K3OR
+							</h1>
+							<h3 class="text-lg">
+								Muhammad Randra Shevalino
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="michiko" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota K3OR
+							</h1>
+							<h3 class="text-lg">
+								Michiko Angelique Jap
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="kimberly" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota K3OR
+							</h1>
+							<h3 class="text-lg">
+								Kimberly Ciputri
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="queen" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota K3OR
+							</h1>
+							<h3 class="text-lg">
+								Queen Tabriz Tsabita
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="arrow" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota K3OR
+							</h1>
+							<h3 class="text-lg">
+								Arrow Dunatos Pascha Kristian
+							</h3>
+						</div>
+					</div>
+				</section>
+			</div>
+            <div class="tw-division-container">
+				<section class="flex flex-row justify-center items-center flex-1 mt-6 w-full">
+					<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+						<div class="mx-4">
+							<img src="./bahan/08 SASTRA BUDAYA.png" class="aspect-auto max-w-[200px]">
+						</div>
+						<h1 class="text-3xl font-bold text-center">
+							Seksi Sastra Budaya
+						</h1>
+						<div class="tw-leftside-text">
+							SASBUD
+						</div>
+					</div>
+				</section>
+				<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="arva" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Kasie SasBud
+							</h1>
+							<h3 class="text-lg">
+								Arva Mochammad Raditia
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="zaskia" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								WaKasie SasBud
+							</h1>
+							<h3 class="text-lg">
+								Zaskia Mehrunisha Arizani
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="nabilla" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota SasBud
+							</h1>
+							<h3 class="text-lg">
+								Nabilla Anissa
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="erian" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota SasBud
+							</h1>
+							<h3 class="text-lg">
+								Erian Ahmad Feriansyah
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="renata" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota SasBud
+							</h1>
+							<h3 class="text-lg">
+								Renata Hanifah
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="ilfariyani" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota SasBud
+							</h1>
+							<h3 class="text-lg">
+								Ilfariyani Nurfaizah Syahrial
+							</h3>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="tw-division-container">
+				<section class="flex flex-row justify-center items-center flex-1 mt-6 w-full">
+					<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+						<div class="mx-4">
+							<img src="./bahan/09 PUDO.png" class="aspect-auto max-w-[200px]">
+						</div>
+						<h1 class="text-3xl font-bold text-center">
+							Seksi Publikasi dan Dokumentasi
+						</h1>
+						<div class="tw-rightside-text">
+							PUDO
+						</div>
+					</div>
+				</section>
+				<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="ariq" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Kasie PUDO
+							</h1>
+							<h3 class="text-lg">
+								Ahmad Ariq Aulia
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="ryandra" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								WaKasie PUDO
+							</h1>
+							<h3 class="text-lg">
+								Ryandra Dwi Abhipraya
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="aulia" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota PUDO
+							</h1>
+							<h3 class="text-lg">
+								Aulia Salsabila Widodo
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="daffa" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota PUDO
+							</h1>
+							<h3 class="text-lg">
+								Daffa Naufal Zuhdi
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="viona" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota PUDO
+							</h1>
+							<h3 class="text-lg">
+								Viona Chelsea Fedrosia
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="anindya" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota PUDO
+							</h1>
+							<h3 class="text-lg">
+								Anindya Zilka Qisthi
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="aqila" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota PUDO
+							</h1>
+							<h3 class="text-lg">
+								Aqila Shafa Apsarita Suryanto
+							</h3>
+						</div>
+					</div>
+				</section>				
+			</div>
+
+		</main>
+		<main id="bidang2" class="tw-dept-container">
+			<h1 class="text-5xl font-bold">
+				<span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-gradient-to-r before:from-teal-500 before:to-teal-300 relative inline-block p-3">
+					<span class="relative text-white">Bidang II</span>
+				</span>
+			</h1>
+			<div class="tw-division-container">
+				<section class="flex flex-row justify-center items-center flex-1 mt-6 w-full">
+					<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+						<div class="mx-4">
+							<img src="./bahan/10 AKADEMIS.png" class="aspect-auto max-w-[200px]">
+						</div>
+						<h1 class="text-3xl font-bold text-center">
+							Seksi Akademis
+						</h1>
+						<div class="tw-leftside-text">
+							AKAD
+						</div>
+					</div>
+				</section>
+				<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="fathirrazi" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Kasie Akademis
+							</h1>
+							<h3 class="text-lg">
+								Mochammad Fathirrazi Nafisandy
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="ferrel" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								WaKasie Akademis
+							</h1>
+							<h3 class="text-lg">
+								Ferrel Himawan Handoyo
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="rizal" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota Akademis
+							</h1>
+							<h3 class="text-lg">
+								Daffa Rizal Baihaki
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="shadrina" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota Akademis
+							</h1>
+							<h3 class="text-lg">
+								Shadrina Tiviano
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="arfan" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota Akademis
+							</h1>
+							<h3 class="text-lg">
+								Arfan Erzananda Dildar
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="akiva" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota Akademis
+							</h1>
+							<h3 class="text-lg">
+								Akiva Talen Martino
+							</h3>
+						</div>
+					</div>
+				</section>				
+			</div>
+			<div class="tw-division-container">
+				<section class="flex flex-row justify-center items-center flex-1 mt-6 w-full">
+					<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+						<div class="mx-4">
+							<img src="./bahan/11 DHL.png" class="aspect-auto max-w-[200px]">
+						</div>
+						<h1 class="text-3xl font-bold text-center">
+							Seksi Demokrasi, HAM, dan Lingkungan
+						</h1>
+						<div class="tw-rightside-text">
+							<h1>
+								DHL
+							</h1>
+						</div>
+					</div>
+				</section>
+				<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="fauzan" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Kasie DHL
+							</h1>
+							<h3 class="text-lg">
+								Fauzan Adiwidya Kurniawan
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="gladys" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								WaKasie DHL
+							</h1>
+							<h3 class="text-lg">
+								Gladys Gwendolyn Silalahi
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="galuh" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota DHL
+							</h1>
+							<h3 class="text-lg">
+								Galuh Kristian Joenata
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="khadijah" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota DHL
+							</h1>
+							<h3 class="text-lg">
+								Khadijah Naila Ibtisam
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="ega" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota DHL
+							</h1>
+							<h3 class="text-lg">
+								Ega Aryasatya
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="fathir" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota DHL
+							</h1>
+							<h3 class="text-lg">
+								Azhri Fathir Nugroho
+							</h3>
+						</div>
+					</div>
+				</section>				
+			</div>
+			<div class="tw-division-container">
+				<section class="flex flex-row justify-center items-center flex-1 mt-6 w-full">
+					<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+						<div class="mx-4">
+							<img src="./bahan/12 ASRAMA.png" class="aspect-auto max-w-[200px]">
+						</div>
+						<h1 class="text-3xl font-bold text-center">
+							Seksi Asrama
+						</h1>
+						<div class="tw-leftside-text">
+							<h1>
+								ASRAMA
+							</h1>
+						</div>
+					</div>
+				</section>
+				<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="hardian" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Kasie Asrama
+							</h1>
+							<h3 class="text-lg">
+								Hardian Akhsan Irawan
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="rafa" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								WaKasie Asrama
+							</h1>
+							<h3 class="text-lg">
+								Rafa Deliyati
+							</h3>
+						</div>
+					</div>
+				</section>				
+			</div>
+			<div class="tw-division-container">
+				<section class="flex flex-row justify-center items-center flex-1 mt-6 w-full">
+					<div class="flex flex-col lg:flex-row justify-center items-center w-2/3">
+						<div class="mx-4">
+							<img src="./bahan/13 ROHANI.png" class="aspect-auto max-w-[200px]">
+						</div>
+						<h1 class="text-3xl font-bold text-center">
+							Seksi Rohani
+						</h1>
+						<div class="tw-rightside-text">
+							<h1>
+								ROHANI
+							</h1>
+						</div>
+					</div>
+				</section>
+				<section class="mx-8 grid auto-fit-2 gap-4 max-w-[75%]">
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="agung" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Kasie Rohani
+							</h1>
+							<h3 class="text-lg">
+								Agung Cahyono
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="victorius" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								WaKasie Rohani
+							</h1>
+							<h3 class="text-lg">
+								Victorius Almon Rapmalo
+							</h3>
+						</div>
+					</div>
+					<div class="flex flex-col space-y-2 text-center">
+						<div id="dewa" class="bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500"></div>
+						<div>
+							<h1 class="text-xl font-semibold">
+								Anggota Rohani
+							</h1>
+							<h3 class="text-lg">
+								Dewa Komang Andhika Dharma Saputra
+							</h3>
+						</div>
+					</div>
+				</section>				
+			</div>
+		</main>
     </section>
-	<nav class="flex flex-row bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end  text-white">
+	<nav class="flex flex-row bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end text-white">
 		<header class="flex flex-column justify-center items-center mx-8">
 			<h1 class="text-4xl font-bold">
 				Contact Us!
