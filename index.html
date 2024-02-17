@@ -21,6 +21,9 @@
 					main: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji']
 				},
 				extend: {
+					screens: {
+						'xs': '320px'
+					},
 					colors: {
 						'nav-blue': '#3a78c0',
 						'nav-red': '#b63c3c',
@@ -52,39 +55,39 @@
 			<a href="/about-us.html">About Us</a>
 		</div>
 	</nav>
-	<main class="flex flex-row items-center py-12 justify-center space-x-8 bg-main-blue">
-		<div id="desc" class="text-justify">
-			<h1 class="font-bold text-6xl whitespace-pre-line text-white">SMAN Unggulan M. H.
-				Thamrin
+	<main class="flex flex-col lg:flex-row-reverse justify-center items-center py-12 bg-main-blue">
+		<div class="flex flex-row justify-center m-8 w-auto max-w-full md:w-[700px]">
+			<img src="bahan/gedbun.jpeg" class="aspect-auto rounded-md shadow-2xl">
+		</div>
+		<div id="desc" class="flex flex-col items-center lg:items-start text-center lg:text-justify p-12">
+			<h1 class="font-bold text-6xl text-white text-center lg:text-left">
+				SMAN Unggulan M. H. Thamrin
 			</h1>
-			<p class="my-3 font-medium text-lg max-w-[70ch] text-white/100">
+			<p class="my-3 font-medium lg:text-left text-lg max-w-[70ch] text-white/100">
 				<i>SMAN Unggulan M. H. Thamrin</i> adalah sekolah sains yang berkomitmen untuk memberikan pendidikan berkualitas bagi peserta didik yang memiliki potensi dan kecerdasan istimewa, terutama di bidang sains. Oleh karena itu, sekolah ini mengaplikasikan tiga kurikulum: Nasional, Cambridge, dan Olimpiade.
 			</p>
 			<p class="my-3 font-medium text-lg max-w-[70ch] text-white/100">
 				Sekolah ini menghasilkan peserta didik yang memiliki prestasi di berbagai bidang, sehingga lulusan-lulusan SMAN Unggulan M.H. Thamrin sekarang sudah berada di universitas-universitas penjuru dunia, seperti Oxford, UCLA, NTU, NUS, dll.
 			</p>
-			<div id="curriculum" class="flex flex-row my-8 justify-evenly">
+			<div id="curriculum" class="flex flex-col justify-center items-center w-full my-8 space-y-8 xs:flex-row xs:space-y-0 xs:space-x-8 ">
 				<div>
-					<img src="bahan/kurnas.png" class="aspect-auto max-w-[7vw]">
+					<img src="bahan/kurnas.png" class="aspect-auto w-[150px]">
 				</div>
 				<div>
-					<img src="bahan/camb.png" class="aspect-auto max-w-[7vw]">
+					<img src="bahan/camb.png" class="aspect-auto w-[150px]">
 				</div>
 				<div>
-					<img src="bahan/OSN.png" class="aspect-auto max-w-[7vw]">
+					<img src="bahan/OSN.png" class="aspect-auto w-[150px]">
 				</div>
 			</div>
 		</div>
-		<div>
-			<img src="bahan/gedbun.jpeg" class="aspect-auto rounded-md shadow-2xl">
-		</div>
 	</main>
-	<section class="flex flex-row items-center py-6 justify-center space-x-8">
-		<div>
-			<img src="bahan/Mockup.png" class="aspect-auto max-w-[25vw]">
+	<section class="flex flex-col lg:flex-row justify-center items-center py-6">
+		<div class="flex flex-row justify-center items-center">
+			<img src="bahan/Mockup.png" class="aspect-auto md:w-[600px]">
 		</div>
-		<div id="desc" class="flex flex-col justify-center items-end text-right">
-			<h1 class="font-bold text-6xl whitespace-pre-line text-black">Ikuti keseruan TOC 14 
+		<div id="desc" class="flex flex-col justify-center items-center text-center lg:text-right lg:items-end p-12">
+			<h1 class="font-bold text-6xl lg:whitespace-pre-line text-black">Ikuti keseruan TOC 14 
 				dan JVLYN 8.0!
 			</h1>
 			<p class="my-3 font-medium text-lg max-w-[70ch] text-black/70">
@@ -98,10 +101,13 @@
 			</button>
 		</div>
 	</section>
-	<section class="flex flex-row items-center py-6 justify-center space-x-8">
-		
-		<div id="desc" class="flex flex-col justify-center items-end text-left">
-			<h1 class="merch">MHT Merch
+	<section class="flex flex-col lg:flex-row-reverse justify-center items-center py-6">
+		<div class="flex flex-row justify-center items-center">
+			<img src="bahan/Mockup.png" class="aspect-auto md:w-[600px]">
+		</div>
+		<div id="desc" class="flex flex-col justify-center items-center text-center lg:text-left lg:items-start p-12">
+			<h1 class="font-bold text-6xl text-black">
+				MHT Merch
 			</h1>
 			<p class="my-3 font-medium text-lg max-w-[70ch] text-black/70">
 				<i>SMAN Unggulan M. H. Thamrin</i> adalah sekolah sains yang berkomitmen untuk memberikan pendidikan berkualitas bagi peserta didik yang memiliki potensi dan kecerdasan istimewa, terutama di bidang sains. Oleh karena itu, sekolah ini mengaplikasikan tiga kurikulum: Nasional, Cambridge, dan Olimpiade.
@@ -113,18 +119,15 @@
 				Daftar Sekarang
 			</button>
 		</div>
-		<div>
-			<img src="bahan/Mockup.png" class="aspect-auto max-w-[25vw]">
-		</div>
 	</section>
-	<nav class="flex flex-row bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end  text-white">
-		<header class="flex flex-column justify-center items-center mx-8">
+	<nav class="flex flex-col xl:flex-row justify-center items-center p-4 bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end text-white">
+		<header class="flex flex-column justify-center items-center m-8">
 			<h1 class="text-4xl font-bold">
 				Contact Us!
 			</h1>
 		</header>
-		<main class="flex flex-col justify-center items-center flex-1 ">
-			<section class="flex flex-row w-full flex-1 p-4">
+		<main class="flex flex-col justify-center items-center flex-1">
+			<section class="flex flex-col lg:flex-row justify-center items-center space-y-8 lg:space-y-0 w-full flex-1 p-4">
 				<div id="instagram" class="flex flex-row justify-center items-center space-x-3 flex-1">
 					<div>
 						<img src="./bahan/instagram.png" class="max-w-[40px]">
@@ -162,7 +165,7 @@
 					</div>
 				</div>
 			</section>
-			<div class="flex flex-col text-white w-full flex-1 text-slate-200/95 p-4 items-center">
+			<div class="flex flex-col text-white text-center w-full flex-1 text-slate-200/95 p-4 items-center">
 				<a class="direction" href="https://maps.app.goo.gl/NL9DGHosARnMcpR8A">
 					Jl. Bambu Wulung No.7, RT.7/RW.5, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890
 				</a>
