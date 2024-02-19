@@ -45,3 +45,7 @@
 .logo_bph{
     display: flex;
 }
+
+a:hover{
+    opacity: 80%;
+}

@@ -35,3 +35,12 @@
 .direction {
     font-size: 1.3rem;
 }
+
+.daftar:hover{
+    background-color: black;
+    opacity: 80%;
+}
+
+a:hover{
+    opacity: 80%;
+}
