@@ -1,4 +1,4 @@
-.k3orgallery {
+.k3orgallery{
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -6,8 +6,24 @@
     width: 20%;
 }
 
-.k3or {
+.k3or{
     background-image: url("bahan/k3or.png");
+    background-repeat: no-repeat;
+   
+}
+
+.sasbudgallery{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    width: 20%;
+}
+
+.sasbud{
+    background-image: url("bahan/sasbud.png");
     background-repeat: no-repeat;
     height: 1080px;
 }
+
+
