@@ -1,0 +1,37 @@
+:root {
+    --mainfont: "Inter", sans-serif;
+}
+* {
+    font-family: var(--mainfont);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1330px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: var(--mainfont);
+    font-weight: 800;
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+}
+
+.isi {
+    margin-top: 20px;
+    
+}
+
+img {
+    max-width: 40%;
+    float: left;
+    margin-right: 20px
+}
