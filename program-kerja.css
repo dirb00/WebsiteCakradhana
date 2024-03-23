@@ -1,31 +1,79 @@
-.k3orgallery{
+.k3orgallery, .sasbudgallery{
     justify-content: center;
     align-items: center;
     margin: auto;
     display: flex;
-    width: 20%;
+
 }
 
 .k3or{
-    background-image: url("bahan/k3or.png");
+    background-image: url("bahan/proker/k3orbg.png");
     background-repeat: no-repeat;
-   
-}
-
-.sasbudgallery{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    display: flex;
-    width: 20%;
+    background-size: 100% auto;
+    height: 450px;
 }
 
 .sasbud{
-    background-image: url("bahan/sasbud.png");
+    background-image: url("bahan/proker/sasbudbg.png");
     background-repeat: no-repeat;
-    height: 1080px;
+    background-size: 100% auto;
+    height: 450px;
 }
 
+.pudo{
+    background-image: url("bahan/proker/pudobg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 450px;
+}
+
+.akad{
+    margin-top: 0;
+    background-image: url("bahan/proker/akadbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 450px;
+}
+
+.k3orcolumns, .sasbudcolumns, .pudocolumns, .akadcolumns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:  center;
+}
+
+.k3orcolumn, .sasbudcolumn, .pudocolumn, .akadcolumn{
+    flex:3;
+    padding: 5px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.k3orlogo{
+    max-height: 400px;
+    margin-top: auto;
+}
+
+.sasbudlogo{
+    max-height: 450px;
+    margin-top: auto;
+    
+}
+
+.pudologo{
+    max-height: 450px;
+    margin-top: auto;
+}
+
+.akadlogo{
+    max-height: 350PX;
+}
+ul{
+    list-style: disc;
+}
 
 a:hover{
     opacity: 80%;
