@@ -49,3 +49,27 @@
 a:hover{
     opacity: 80%;
 }
+/*text-5xl font-bold*/
+
+.bidang1 {
+    font-weight: 700;
+    font-size: 3.3rem;
+    background: #1D7FCF;
+background: linear-gradient(to right, #1D7FCF 0%, #5370C8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+
+.bidang2 {
+    font-weight: 700;
+    font-size: 3.3rem;
+    background: #F4C128;
+background: linear-gradient(to right, #F4C128 0%, #E48826 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+
+}
