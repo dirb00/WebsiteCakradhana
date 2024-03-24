@@ -7,10 +7,11 @@
     font-family: "Inter", sans-serif;
     font-weight: bold;
     border: solid rgb(164, 35, 35);
-    border-width: 5px;
+    border-width: 6px;
     border-radius: 45px;
     padding: 17px;
     box-sizing: border-box;
+    font-size: 1.2rem;
 }
 
 .merch {
