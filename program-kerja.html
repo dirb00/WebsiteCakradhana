@@ -34,66 +34,7 @@
 			}
 		}
 	</script>
-	<style type="text/tailwindcss">
-		@layer utilities {
-			.auto-fit-1 {
-				grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-			}
-			.auto-fit-2 {
-				grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-			}
 
-			.hollow-white {
-				color: white;
-				background-color: white;
-				text-shadow: -2px -2px 0 rgb(0 0 0 / 0.24), 
-							2px -2px 0 rgb(0 0 0 / 0.24), 
-							-2px 2px 0 rgb(0 0 0 / 0.24), 
-							2px 2px 0 rgb(0 0 0 / 0.24);
-			}
-
-			.tw-dept-container {
-				@apply flex flex-col justify-center items-center space-y-12
-			}
-
-			.tw-division-container {
-				@apply flex flex-col justify-center items-center flex-1 relative space-y-8 w-full max-w-full overflow-x-hidden
-			}
-			.tw-division-title-container {
-				@apply flex flex-row justify-center items-center flex-1 mt-6 w-full
-			}
-			.tw-division-title-flexbox {
-				@apply flex flex-col lg:flex-row justify-center items-center w-2/3
-			}
-			.tw-division-title {
-				@apply text-3xl font-bold text-center my-16 relative before:block before:absolute before:text-9xl before:sm:text-[9rem] before:hollow-white before:-z-10 before:top-[50%] before:-translate-y-[50%] before:left-[50%] before:-translate-x-[50%] before:xl:hidden
-			}
-
-			.tw-division-grid {
-				@apply mx-8 grid auto-fit-2 gap-4 max-w-[75%]
-			}
-			.tw-division-grid-card {
-				@apply flex flex-col space-y-2 text-center
-			}
-			.tw-division-grid-card-image {
-				@apply bg-contain bg-no-repeat bg-bottom h-[250px] bg-red-500
-			}
-
-			.leftside-text-accessory {
-				left: calc(8rem - 17px);
-			}
-			.tw-leftside-text {
-				@apply absolute origin-top-left rotate-90 top-0 leftside-text-accessory m-auto hidden xl:block text-9xl hollow-white select-none
-			}
-
-			.rightside-text-accessory {
-				right: calc(8rem - 17px);
-			}
-			.tw-rightside-text {
-				@apply absolute origin-top-right -rotate-90 top-0 rightside-text-accessory m-auto hidden xl:block text-9xl hollow-white select-none
-			}
-		}
-	</style>
 
 	<!-- Animation library -->
 	<link rel="stylesheet" href="./animations.css">
@@ -105,6 +46,7 @@
 		</div>
 		<div id="nav" class="hidden lg:flex flex flex-row flex-1 justify-end space-x-8">
 			<a href="/">Home</a>
+			<a href="thalation.html">Thalation</a>
 			<a href="/about-us.html">About Us</a>
 		</div>
 		<div class="lg:hidden flex flex-column flex-1 justify-end">
@@ -131,12 +73,11 @@
 	</nav>
 	
     <div class="k3or">
-        
-		<section class="k3orcolumns">
-			<div class="k3orcolumn">
-				<img src="/bahan/07 K3OR.png" class="k3orlogo" alt="">
+		<section class="columnsleft">
+			<div class="columnleft">
+				<img src="/bahan/07 K3OR.png" class="logo" alt="">
 			</div>
-			<div class="k3orcolumn">
+			<div class="columnleft">
 				<ul>
 					<li>Thamrin Sports and Creativity Week (TSC)</li>
 					<li>Jakarta Festival by Thamrin (JVLYN)</li>
@@ -145,7 +86,7 @@
 					<li>Thamgoods</li>
 				</ul>
 			</div>
-			<div class="k3orcolumn">
+			<div class="columnleft">
 				<ul>
 					<li>Soulcrave </li>
 					<li>Thamrin Family Gathering</li>
@@ -155,82 +96,56 @@
 		</section>
     </div>
 
-    <div class="sasbud">
-        
-		<section class="sasbudcolumns">
-			<div class="sasbudcolumn">
-				<img src="/bahan/08 SASTRA BUDAYA.png" class="sasbudlogo" alt="">
-			</div>
-			<div class="sasbudcolumn">
-				<ul>
-					<li>Thamrin Sports and Creativity Week (TSC)</li>
-					<li>Jakarta Festival by Thamrin (JVLYN)</li>
-					<li>Thamrin Olympiad and Cup (TOC)</li>
-					<li>Perayaan Hari Guru
-						Thamgoods</li>
-				</ul>
-			</div>
-			<div class="sasbudcolumn">
-				<ul>
-					<li>Soulcrave </li>
-					<li>Thamrin Family Gathering</li>
-					<li>Pengawasan ekstrakurikuler band, basket, futsal, pencak silat, dan renangs</li>
-				</ul>
-			</div>
-		</section>
-    </div>
-
-    <div class="pudo">
-        
-		<section class="pudocolumns">
-			<div class="pudocolumn">
-				<img src="/bahan/09 PUDO.png" class="pudologo" alt="">
-			</div>
-			<div class="pudocolumn">
+	<div class="sasbud">
+		<section class="columnsleft">
+			
+			<div class="columnleft">
 				<ul>
 					<li>Thamrin Sports and Creativity Week (TSC)</li>
 					<li>Jakarta Festival by Thamrin (JVLYN)</li>
 					<li>Thamrin Olympiad and Cup (TOC)</li>
 					<li>Perayaan Hari Guru</li>
-					
+					<li>Thamgoods</li>
 				</ul>
 			</div>
-			<div class="pudocolumn">
+			<div class="columnleft">
+				<ul>
+					<li>Soulcrave </li>
+					<li>Thamrin Family Gathering</li>
+					<li>Pengawasan ekstrakurikuler band, basket, futsal, pencak silat, dan renang</li>
+				</ul>
+			</div>
+			<div class="columnleft">
+				<img src="/bahan/08 SASTRA BUDAYA.png" class="logo" alt="">
+			</div>
+		</section>
+    </div>
+
+	<div class="pudo">
+		<section class="columnsleft">
+			<div class="columnleft">
+				<img src="/bahan/09 PUDO.png" class="logo" alt="">
+			</div>
+			<div class="columnleft">
 				<ul>
 					<li>Thamrin Sports and Creativity Week (TSC)</li>
 					<li>Jakarta Festival by Thamrin (JVLYN)</li>
 					<li>Thamrin Olympiad and Cup (TOC)</li>
-					<li>Perayaan Hari Guru
-						Thamgoods</li>
+					<li>Perayaan Hari Guru</li>
+					<li>Thamgoods</li>
 				</ul>
 			</div>
+			<div class="columnleft">
+				<ul>
+					<li>Soulcrave </li>
+					<li>Thamrin Family Gathering</li>
+					<li>Pengawasan ekstrakurikuler band, basket, futsal, pencak silat, dan renang</li>
+				</ul>
+			</div>
+			
 		</section>
+    </div>
 
-		<div class="akad">
-        
-			<section class="akadcolumns">
-				<div class="akadcolumn">
-					<img src="/bahan/10 AKADEMIS.png" class="akadlogo" alt="">
-				</div>
-				<div class="akadcolumn">
-					<ul>
-						<li>Thamrin Sports and Creativity Week (TSC)</li>
-						<li>Jakarta Festival by Thamrin (JVLYN)</li>
-						<li>Thamrin Olympiad and Cup (TOC)</li>
-						<li>Perayaan Hari Guru</li>
-						
-					</ul>
-				</div>
-				<div class="akadcolumn">
-					<ul>
-						<li>Thamrin Sports and Creativity Week (TSC)</li>
-						<li>Jakarta Festival by Thamrin (JVLYN)</li>
-						<li>Thamrin Olympiad and Cup (TOC)</li>
-						<li>Perayaan Hari Guru
-							Thamgoods</li>
-					</ul>
-				</div>
-			</section>
 
 		
     </div>

@@ -1,80 +1,51 @@
-.k3orgallery, .sasbudgallery{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    display: flex;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .k3or{
-    background-image: url("bahan/proker/k3orbg.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 450px;
+    background-image: url(./bahan/proker/k3orbg.png);
+    height: 300px;
+    align-items: center;
+    display: flex;
 }
 
 .sasbud{
-    background-image: url("bahan/proker/sasbudbg.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 450px;
+    background-image: url(./bahan/proker/sasbudbg.png);
+    height: 300px;
+    align-items: center;
+    display: flex;
 }
 
 .pudo{
-    background-image: url("bahan/proker/pudobg.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 450px;
-}
-
-.akad{
-    margin-top: 0;
-    background-image: url("bahan/proker/akadbg.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 450px;
-}
-
-.k3orcolumns, .sasbudcolumns, .pudocolumns, .akadcolumns{
+    background-image: url(./bahan/proker/pudobg.png);
+    height: 300px;
+    align-items: center;
     display: flex;
-    flex-flow: row wrap;
-    justify-content:  center;
 }
 
-.k3orcolumn, .sasbudcolumn, .pudocolumn, .akadcolumn{
-    flex:3;
-    padding: 5px;
+
+.columnsleft{
+    display: flex;
+    justify-content: space-evenly;
     color: white;
-    font-size: 2rem;
-    font-weight: 600;
-    margin: auto;
-    text-align: left;
-    vertical-align: middle;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
 }
 
-.k3orlogo{
-    max-height: 400px;
-    margin-top: auto;
-}
-
-.sasbudlogo{
-    max-height: 450px;
-    margin-top: auto;
+.columnleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.pudologo{
-    max-height: 450px;
-    margin-top: auto;
+.logo{
+    width: 300px;
 }
 
-.akadlogo{
-    max-height: 350PX;
-}
-ul{
+li {
     list-style: disc;
-}
-
-a:hover{
-    opacity: 80%;
 }
