@@ -57,7 +57,9 @@ table, th,td{
     width: 60%;
     margin: auto;
 }
-
+a:hover{
+    opacity: 70%;
+}
 th{
     font-weight: 500;
 }

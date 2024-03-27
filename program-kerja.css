@@ -11,12 +11,17 @@
 .mobile{
     display: none;
 }
-
+.k3or,.sasbud,.pudo,.akad,.dhl,.asrama,.rohani{
+    background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; background-size: cover;
+}
 .k3or{
     background-image: url(./bahan/proker/k3orbg.png);
     height: 300px;
     align-items: center;
     display: flex;
+    
 }
 
 
@@ -57,19 +62,18 @@
 
 .rohani{
     background-image: url(./bahan/proker/rohanibg.png);
-    height: 650px;
+    height: 630px;
     align-items: center;
     display: flex;
 }
 
 .blank{
-    width: 690px;
+    width: 600px;
 }
 
-.pudologo{
-    flex-shrink: 0.5;
+a:hover{
+    opacity: 70%;
 }
-
 .columnsleft{
     display: flex;
     justify-content: space-evenly;
@@ -78,8 +82,9 @@
     align-items: center;
     gap: 2rem;
     flex: 1;
-    margin: 1.6rem;
+    margin: 1.2rem;
 }
+
 
 
 .columnleft{
@@ -89,19 +94,17 @@
     
 }
 
-.innercolumn{
-    margin: 0;
-}
-
 .logo{
     width: 300px;
+    min-width: 150px;
+  
 }
 
 li {
     list-style: disc;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 
     .dekstop{
         display: none;
