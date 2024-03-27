@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.dekstop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
 .k3or{
     background-image: url(./bahan/proker/k3orbg.png);
     height: 300px;
@@ -33,6 +41,7 @@
     align-items: center;
     gap: 2rem;
     flex: 1;
+    margin: 1.2rem;
 }
 
 .columnleft{
@@ -48,4 +57,41 @@
 
 li {
     list-style: disc;
+}
+
+@media screen and (max-width: 650px) {
+
+    .dekstop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+    .pudo, .k3or, .sasbud{
+        height: 800px;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; background-size: cover;
+    }
+    .columnsleft{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+        gap: 2rem;
+        flex: 1;
+        margin: 1.2rem;
+    }
+
+    .columnleft{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
+    }
 }
