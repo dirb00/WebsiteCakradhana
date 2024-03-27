@@ -12,6 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="thalation.css">
+
 	<!-- Tailwind -->
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
@@ -35,6 +36,7 @@
 			}
 		}
 	</script>
+	<link rel="stylesheet" href="./animations.css">
 	<script src="./hamburger.js" defer></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
@@ -88,7 +90,7 @@
             <form class="mainform">
                 <span class="texts">Nama (apabila ingin anonim isi '-')</span>
                 <input type="hidden" name="access_key" value="3c883bb7-c619-430f-b6c6-eac06e9f62d1">
-                <input type="text" placeholder="Your name" name="Name" class="name">
+                <input class="text" type="text" placeholder="Your name" name="Name" class="name">
                 <span class="texts">Aspirasi</span>
                 <textarea class="aspirasi" placeholder="Tuliskan aspirasimu" name="Aspirasi" id="Aspirasi" cols="30" rows="10"></textarea>
                 <button class="submit" type="submit">Kirim</button>

@@ -15,6 +15,13 @@
     color: white;
 }
 
+.text, .aspirasi{
+    background-color: #264d7c;
+    border: solid white;
+    color: white;
+    padding: 13px;
+}
+
 .mainform{
     margin-left: 3rem;
     flex-direction: column;
@@ -23,15 +30,6 @@
     display: flex;
     gap: 20px;
 }
-
-input, textarea{
-    background-color: #264d7c;
-    border: solid white;
-    color: white;
-    padding: 15px;
-}
-
-
 
 .submit{
     font-weight: 600;
@@ -56,7 +54,7 @@ table, th,td{
     border-collapse: collapse;
     text-align: left;
     font-size: 1.3rem;
-    width: 20%;
+    width: 60%;
     margin: auto;
 }
 

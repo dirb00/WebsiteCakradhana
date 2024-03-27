@@ -57,13 +57,17 @@
 
 .rohani{
     background-image: url(./bahan/proker/rohanibg.png);
-    height: 500px;
+    height: 650px;
     align-items: center;
     display: flex;
 }
 
-.blank1{
-    width: 400px;
+.blank{
+    width: 690px;
+}
+
+.pudologo{
+    flex-shrink: 0.5;
 }
 
 .columnsleft{
@@ -74,25 +78,19 @@
     align-items: center;
     gap: 2rem;
     flex: 1;
-    margin: 1.2rem;
+    margin: 1.6rem;
 }
 
-.pudo .columnsleft{
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: flex-start;
-    color: white;
-    align-items: center;
-    gap: 10rem;
-    flex: 1;
-    margin: 1.2rem;
-}
 
 .columnleft{
     display: flex;
     align-items: center;
     justify-content: center;
     
+}
+
+.innercolumn{
+    margin: 0;
 }
 
 .logo{
