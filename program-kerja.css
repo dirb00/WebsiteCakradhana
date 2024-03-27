@@ -19,6 +19,7 @@
     display: flex;
 }
 
+
 .sasbud{
     background-image: url(./bahan/proker/sasbudbg.png);
     height: 300px;
@@ -33,13 +34,56 @@
     display: flex;
 }
 
+.akad{
+    background-image: url(./bahan/proker/akadbg.png);
+    height: 300px;
+    align-items: center;
+    display: flex;
+}
+
+.dhl{
+    background-image: url(./bahan/proker/dhlbg.png);
+    height: 300px;
+    align-items: center;
+    display: flex;
+}
+
+.asrama{
+    background-image: url(./bahan/proker/asramabg.png);
+    height: 300px;
+    align-items: center;
+    display: flex;
+}
+
+.rohani{
+    background-image: url(./bahan/proker/rohanibg.png);
+    height: 500px;
+    align-items: center;
+    display: flex;
+}
+
+.blank1{
+    width: 400px;
+}
 
 .columnsleft{
     display: flex;
     justify-content: space-evenly;
+    justify-items: flex-end;
     color: white;
     align-items: center;
     gap: 2rem;
+    flex: 1;
+    margin: 1.2rem;
+}
+
+.pudo .columnsleft{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: flex-start;
+    color: white;
+    align-items: center;
+    gap: 10rem;
     flex: 1;
     margin: 1.2rem;
 }
@@ -68,8 +112,14 @@ li {
     .mobile{
         display: block;
     }
-    .pudo, .k3or, .sasbud{
+    .pudo, .k3or, .sasbud, .akad, .dhl, .asrama{
         height: 800px;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; background-size: cover;
+    }
+    .rohani {
+        height: 1200px;
         background-position: center center;
         background-attachment: fixed;
         background-repeat: no-repeat; background-size: cover;
