@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,12 +19,7 @@
     font-size: 3.75rem;
     margin-right: 480px;
 }
-
-.em2, .ig2 {
-    display:flex;
-}
-
-.contact{
+.contact {
     margin-top: -50px;
 }
 
