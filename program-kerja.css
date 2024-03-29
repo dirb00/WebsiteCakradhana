@@ -11,25 +11,19 @@
 .mobile{
     display: none;
 }
+/* 
 .k3or,.sasbud,.pudo,.akad,.dhl,.asrama,.rohani{
     background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat; background-size: cover;
-}
-.k3or{
+    background-attachment: fixed;
+    background-repeat: no-repeat; background-size: cover;
+} */
+
+.k3or {
     background-image: url(./bahan/proker/k3orbg.png);
-    height: 300px;
-    align-items: center;
-    display: flex;
-    
 }
 
-
-.sasbud{
+.sasbud {
     background-image: url(./bahan/proker/sasbudbg.png);
-    height: 300px;
-    align-items: center;
-    display: flex;
 }
 
 .pudo{
