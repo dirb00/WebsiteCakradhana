@@ -12,6 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="animations.css">
 	<!-- Tailwind -->
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script>
@@ -38,7 +39,7 @@
 	<script src="./hamburger.js" defer></script>
 </head>
 <body class="m-0 p-0 font-main w-full min-h-screen">
-	<nav class="flex relative flex-row items-center px-6 py-3 text-slate-200 text-2xl font-bold w-full bg-gradient-to-r from-nav-red to-nav-blue">
+	<nav id="nav-trans" class="flex relative flex-row items-center px-6 py-3 text-slate-200 text-2xl font-bold w-full bg-gradient-to-r from-nav-red to-nav-blue">
 		<div id="logo" class="w-1/3">
 			<img src="/bahan/simple.png" class="aspect-auto max-w-[75px]">
 		</div>
@@ -69,7 +70,7 @@
 			</div>
 		</div>
 	</nav>
-	<main class="flex flex-col lg:flex-row-reverse justify-center items-center py-12 bg-main-blue">
+	<main id="slide-right" class="flex flex-col lg:flex-row-reverse justify-center items-center py-12 bg-main-blue">
 		<div class="flex flex-row justify-center m-8 w-auto max-w-full md:w-[700px]">
 			<img src="bahan/gedbun.jpeg" class="aspect-auto rounded-md shadow-2xl">
 		</div>
@@ -96,7 +97,7 @@
 			</div>
 		</div>
 	</main>
-	<section class="flex flex-col lg:flex-row justify-center items-center py-6">
+	<section id="slide-left" class="flex flex-col lg:flex-row justify-center items-center py-6">
 		<div class="flex flex-row justify-center items-center">
 			<img src="bahan/Mockup.png" class="aspect-auto md:w-[600px]">
 		</div>
@@ -108,12 +109,14 @@
 				Thamrin Olympiad and Cup atau kerap dikenal sebagai TOC merupakan acara tahunan yang diselenggarakan oleh murid SMAN Unggulan M.H. Thamrin yang berisi beragam lomba mulai dari kompetisi sains sampai perlombaan band. Acara ini setiap tahunya akan ditutup oleh Jakarta Festival by Thamrin atau disebut juga JVLYN yaitu pensi yang didatangi penyanyi-penyanyi hits Indonesia.
 			</p>
 		
-			<button class="daftar">
-				Grab your tickets
-			</button>
+			<a href="https://www.instagram.com/thamrinolymcup/?hl=en" target="_blank">
+				<button class="daftar">
+					Grab Your Tickets
+				</button>
+			</a>
 		</div>
 	</section>
-	<section class="flex flex-col lg:flex-row-reverse justify-center items-center py-6">
+	<section id="slide-right" class="flex flex-col lg:flex-row-reverse justify-center items-center py-6">
 		<div class="flex flex-row justify-center items-center">
 			<img src="bahan/merch.png" class="aspect-auto md:w-[600px]">
 		</div>
@@ -125,12 +128,14 @@
 				Get your own SMAN Unggulan M.H. Thamrin merch, ranging from T-Shirts to stickers!
 			</p>
 			
-			<button class="daftar">
-				Buy yours
-			</button>
+			<a href="http://thammerch.carrd.co/" target="_blank">
+				<button class="daftar">
+					Buy Yours
+				</button>
+			</a>
 		</div>
 	</section>
-	<section class="flex flex-col lg:flex-row justify-center items-center py-6">
+	<section id="slide-left" class="flex flex-col lg:flex-row justify-center items-center py-6">
 		<div class="flex flex-row justify-center items-center">
 			<img src="bahan/megaphone.jpg" class="aspect-auto md:w-[600px]">
 		</div>
@@ -142,13 +147,33 @@
 				Sebagai siswa/i berasrama di SMANU MHT pasti banyak hal yang kamu resahkan benar? Yuk tuangkan dan hilangkan keresahanmu disini!
 			</p>
 		
-			<a href="/thalation.html">
+			<a href="/thalation.html#direct">
 				<button class="daftar">
-					Tuangkan aspirasimu
+					Tuangkan Aspirasimu
 				</button>
 			</a>
 		</div>
 	</section>
+	<section id="slide-right" class="flex flex-col lg:flex-row-reverse justify-center items-center py-6">
+		<div class="flex flex-row justify-center items-center">
+			<img src="bahan/madein.png" class="aspect-auto md:w-[400px]">
+		</div>
+		<div id="desc" class="flex flex-col justify-center items-center text-center lg:text-left lg:items-start p-12">
+			<h1 class="font-bold text-6xl text-black">
+				Thamrin Podcast
+			</h1>
+			<p class="my-3 font-medium text-lg max-w-[70ch] text-black/70">
+				Dengarkan curahan cerita dari siswa-siswi SMAN Unggulan M.H. Thamrin di Made in Thamrin yang bisa diakses melalui Spotify 
+			</p>
+			
+			<a href="https://open.spotify.com/show/2UsnpT1dpJNjzPw4AFLnHH?si=bb95dcbb9e6847c5" target="_blank">
+				<button class="daftar">
+					Dengarkan Sekarang
+				</button>
+			</a>
+		</div>
+	</section>
+	
 	<nav class="flex flex-col xl:flex-row justify-center items-center p-4 bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end text-white">
 		<header class="flex flex-column justify-center items-center m-8">
 			<h1 class="text-4xl font-bold">
@@ -198,6 +223,9 @@
 				<a class="direction" href="https://maps.app.goo.gl/NL9DGHosARnMcpR8A">
 					Jl. Bambu Wulung No.7, RT.7/RW.5, Bambu Apus, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13890
 				</a>
+			</div>
+			<div class="flex flex-col text-white text-center w-full flex-1 text-slate-200/95 p-4 items-center">
+				<p>© 2024 OSPK SMAN Unggulan M.H. Thamrin</p>
 			</div>
 		</main>
 	</nav>

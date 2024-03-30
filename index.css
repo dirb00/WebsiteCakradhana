@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: 264d7c;
+}
+
 .daftar {
     font-family: "Inter", sans-serif;
     font-weight: bold;

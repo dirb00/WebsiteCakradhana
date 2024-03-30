@@ -1,0 +1,58 @@
+
+#nav-trans *{
+    animation: slideDown 0.5s;
+}
+
+#slide-right *{
+    animation: slideRight 0.5s, fade 0.3s;
+}
+
+#slide-left *{
+    animation: slideLeft 0.5s, fade 0.3s;
+}
+
+#slide-up *{
+    animation: slideUp 0.5s, fade 0.3s;
+}
+
+#bph,#bidang1,#bidang2 {
+    animation: slideRight 0.5s, fade 0.3s;
+}
+
+#bphmpk, #komisia, #komisib, #komisic {
+    animation: slideLeft 0.5s, fade 0.3s;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0.8
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes slideUp{
+    from{
+        transform: translateY(5%);
+    }
+}
+
+
+@keyframes slideRight{
+    from{
+        transform: translateX(-5%);
+    }
+}
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(7%);
+    }
+}

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #264d7c;
+}
+
 #bg{
     background-color: #264d7c;
 }
@@ -64,7 +68,9 @@ a:hover{
 th{
     font-weight: 500;
 }
-
+.line:hover{
+    opacity: 100%;
+}
 .legend{
     font-weight: 700;
 }
