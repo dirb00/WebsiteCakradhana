@@ -28,37 +28,22 @@
 
 .pudo{
     background-image: url(./bahan/proker/pudobg.png);
-    height: 300px;
-    align-items: center;
-    display: flex;
 }
 
 .akad{
     background-image: url(./bahan/proker/akadbg.png);
-    height: 300px;
-    align-items: center;
-    display: flex;
 }
 
 .dhl{
     background-image: url(./bahan/proker/dhlbg.png);
-    height: 300px;
-    align-items: center;
-    display: flex;
 }
 
 .asrama{
     background-image: url(./bahan/proker/asramabg.png);
-    height: 300px;
-    align-items: center;
-    display: flex;
 }
 
 .rohani{
     background-image: url(./bahan/proker/rohanibg.png);
-    height: 630px;
-    align-items: center;
-    display: flex;
 }
 
 .blank{
@@ -94,11 +79,8 @@ a:hover{
   
 }
 
-li {
-    list-style: disc;
-}
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
 
     .dekstop{
         display: none;
@@ -139,4 +121,4 @@ li {
         text-align: center;
         
     }
-}
+} */
