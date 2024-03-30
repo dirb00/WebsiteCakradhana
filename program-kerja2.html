@@ -34,10 +34,9 @@
 			}
 		}
 	</script>
-
-
 	<!-- Animation library -->
 	<link rel="stylesheet" href="./animations.css">
+	<script src="./hamburger.js" defer></script>
 </head>
 <body class="flex flex-col m-0 p-0 font-main w-full min-h-screen">
 	<nav class="flex relative flex-row items-center px-6 py-3 text-slate-200 text-2xl font-bold w-full bg-gradient-to-r from-nav-red to-nav-blue">
@@ -71,420 +70,192 @@
 			</div>
 		</div>
 	</nav>
-
     <main class="flex flex-col flex-1 w-full">
-        <div class="k3or flex flex-col py-6 justify-center items-center bg-no-repeat bg-local bg-center bg-cover text-slate-50">
-            <div>
-                <img src="./bahan/07 K3OR.png" class="max-w-[300px]">
-            </div>
-            <h1 class="text-3xl font-bold my-4">
-                Kreativitas, Keterampilan, Kewirausahaan, dan Olahraga
-            </h1>
-            <div class="flex flex-row justify-center items-center space-x-12">
-                <ul class="max-w-[35ch] list-inside">
-                    <li>Thamrin Sports and Creativity Week (TSC)</li>
-                    <li>Jakarta Festival by Thamrin (JVLYN)</li>
-                    <li>Thamrin Olympiad and Cup (TOC)</li>
-                    <li>Perayaan Hari Guru</li>
-                    <li>Thamgoods</li>
-                </ul>
-                <ul class="max-w-[35ch] list-inside">
-                    <li>Soulcrave (SOC)</li>
-                    <li>Thamrin Family Gathering</li>
-                    <li>Pengawasan ekstrakurikuler band, basket, futsal, pencak silat, dan renang</li>
-                </ul>
-            </div>
+        <div class="k3or flex flex-col bg-no-repeat bg-local bg-center bg-cover text-slate-50">
+			<div class="flex flex-col lg:flex-row p-12 justify-center items-center space-x-10 bg-black/35">
+				<div class="flex flex-col justify-center items-center">
+					<div>
+						<img src="./bahan/07 K3OR.png" class="max-w-[300px]">
+					</div>
+					<h1 class="text-3xl font-bold text-center w-[25ch]">
+						Kreativitas, Keterampilan, Kewirausahaan, dan Olahraga
+					</h1>
+				</div>
+				<div class="flex flex-1">
+					<ul class="grid grid-cols-1 lg:grid-cols-2 w-full px-6 list-outside list-disc gap-x-8 gap-y-2 p-12 text-2xl">
+						<li>Thamgoods</li>
+						<li>Perayaan Hari Guru</li>
+						<li>Soulcrave (SOC)</li>
+						<li>Thamrin Family Gathering</li>
+						<li>Thamrin Sports and Creativity Week (TSC)</li>
+						<li>Jakarta Festival by Thamrin (JVLYN)</li>
+						<li>Thamrin Olympiad and Cup (TOC)</li>
+						<li>Pengawasan ekstrakurikuler band, basket, futsal, pencak silat, dan renang</li>
+					</ul>
+				</div>
+			</div>
         </div>
-        <div class="sasbud flex flex-col py-6 justify-center items-center bg-no-repeat bg-local bg-center bg-cover text-slate-50">
-            <div>
-                <img src="./bahan/08 SASTRA BUDAYA.png" class="max-w-[300px]">
-            </div>
-            <h1 class="text-3xl font-bold my-4">
-                Sastra Budaya
-            </h1>
-            <div class="flex flex-row justify-center items-center space-x-12">
-                <ul class="max-w-[35ch] list-inside">
-                    <li>Thamrin Culture Festival</li>
-                    <li>Festival Lomba seni siswa Sekolah (FLS3)</li>
-                    <li>Aksaradhaya</li>
-                    <li>Thamrin Sastra Fair</li>
-                </ul>
-                <ul class="max-w-[35ch] list-inside">
-                    <li>Listerasyik!</li>
-                    <li>Pengawasan Kegiatan Ekstrakurikuler (English Club, Tari Tradisional, Teater, dan Paduan
-                        Suara)</li>
-                </ul>
-            </div>
+        <div class="sasbud flex flex-col bg-no-repeat bg-local bg-center bg-cover text-slate-50">
+			<div class="flex flex-col lg:flex-row p-12 justify-center items-center space-x-10 bg-black/35">
+				<div class="flex flex-col justify-center items-center">
+					<div>
+						<img src="./bahan/08 SASTRA BUDAYA.png" class="max-w-[300px]">
+					</div>
+					<h1 class="text-3xl font-bold text-center w-[25ch]">
+						Sastra Budaya
+					</h1>
+				</div>
+				<div class="flex flex-1">
+					<ul class="grid grid-cols-1 lg:grid-cols-2 w-full px-6 list-outside list-disc gap-x-8 gap-y-2 p-12 text-2xl">
+						<li>Aksaradhaya</li>
+						<li>Literasyik!</li>
+						<li>Thamrin Sastra Fair</li>
+						<li>Thamrin Culture Festival</li>
+						<li>Festival Lomba Seni Siswa Sekolah (FLS3)</li>
+						<li>Pengawasan Kegiatan Ekstrakurikuler (English Club, Tari Tradisional, Teater, dan Paduan Suara)</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <div class="pudo flex flex-col bg-no-repeat bg-local bg-center bg-cover text-slate-50">
+			<div class="flex flex-col lg:flex-row p-12 justify-center items-center space-x-10 bg-black/35">
+				<div class="flex flex-col justify-center items-center">
+					<div>
+						<img src="./bahan/09 PUDO.png" class="max-w-[300px]">
+					</div>
+					<h1 class="text-3xl font-bold text-center w-[25ch]">
+						Publikasi dan Dokumentasi
+					</h1>
+				</div>
+				<div class="flex flex-1">
+					<ul class="grid grid-cols-1 lg:grid-cols-2 w-full px-6 justify-between list-outside list-disc gap-x-8 gap-y-2 p-12 text-2xl">
+						<li>Website</li>
+						<li>Thamrin Podcast</li>
+						<li>Feeds Instagram</li>
+						<li>VELDA (Vlog Elang Muda)</li>
+						<li>Pud - Ups (PUDO Updates)</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <div class="akad flex flex-col bg-no-repeat bg-local bg-center bg-cover text-slate-50">
+			<div class="flex flex-col lg:flex-row p-12 justify-center items-center space-x-10 bg-black/35">
+				<div class="flex flex-col justify-center items-center">
+					<div>
+						<img src="./bahan/10 AKADEMIS.png" class="max-w-[300px]">
+					</div>
+					<h1 class="text-3xl font-bold text-center w-[25ch]">
+						Akademis
+					</h1>
+				</div>
+				<div class="flex flex-1">
+					<ul class="grid grid-cols-1 lg:grid-cols-2 w-full px-6 list-outside list-disc gap-x-8 gap-y-2 p-12 text-2xl">
+						<li>Hall of Fame</li>
+						<li>Open House</li>
+						<li>Mamacu Kakacu</li>
+						<li>Publikasi Prestasi</li>
+						<li>Koordinasi Lomba</li>
+						<li>Mading Akademis</li>
+						<li>Olim Sorting Hat</li>
+						<li>Thamrin Homecoming</li>
+						<li>Thamrin Knowledge Invasion (THANOS)</li>
+						<li>Pengawasan Kegiatan Ekstrakurikuler (Kelompok Ilmiah Remaja)</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <div class="dhl flex flex-col bg-no-repeat bg-local bg-center bg-cover text-slate-50">
+			<div class="flex flex-col lg:flex-row p-12 justify-center items-center space-x-10 bg-black/35">
+				<div class="flex flex-col justify-center items-center">
+					<div>
+						<img src="./bahan/11 DHL.png" class="max-w-[300px]">
+					</div>
+					<h1 class="text-3xl font-bold text-center w-[25ch]">
+						Demokrasi, HAM, dan Lingkungan
+					</h1>
+				</div>
+				<div class="flex flex-1">
+					<ul class="grid grid-cols-1 lg:grid-cols-2 w-full px-6 list-outside list-disc gap-x-8 gap-y-2 p-12 text-2xl">
+						<li>Mading DHL</li>
+						<li>Studi Banding</li>
+						<li>Peduli Lingkungan Thamrin (PELITHA)</li>
+						<li>Keluarga Thamrin Peduli (KeThaPel)</li>
+						<li>Masa Pengenalan Lingkungan Sekolah</li>
+						<li>Student Council Conference (SCORENCE)</li>
+						<li>A Day of Environment and Human Rights (DONUTS)</li>
+						<li>Inspeksi dan Patroli Lingkungan (SPEKTROL)</li>
+						<li>Rangkaian Latihan Dasar Kepemimpinan Siswa dan Kaderisasi</li>
+						<li>Pengawasan Kegiatan Ekstrakurikuler (Pramuka Putra dan Putri, Paskibra)</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <div class="asrama flex flex-col bg-no-repeat bg-local bg-center bg-cover text-slate-50">
+			<div class="flex flex-col lg:flex-row p-12 justify-center items-center space-x-10 bg-black/35">
+				<div class="flex flex-col justify-center items-center">
+					<div>
+						<img src="./bahan/12 ASRAMA.png" class="max-w-[300px]">
+					</div>
+					<h1 class="text-3xl font-bold text-center w-[20ch]">
+						Asrama
+					</h1>
+				</div>
+				<div class="flex flex-1">
+					<ul class="grid grid-cols-1 lg:grid-cols-2 w-full px-6 list-outside list-disc gap-x-8 gap-y-2 p-12 text-2xl">
+						<li>Thamrin Bingo</li>
+						<li>Pikachu O'lliday</li>
+						<li>Ultah Bareng Thamrin</li>
+						<li>PEPATHA (Peduli Plastik Thamrin)</li>
+						<li>Malam Indah Nostalgia Akhir Tahun (MINAT)</li>
+						<li>Masa Pengenalan Lingkungan Asrama (MPLA)</li>
+						<li>Pengelolaan Konten Asrama (OA LINE, Instagram Daily)</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <div class="rohani flex flex-col bg-no-repeat bg-local bg-center bg-cover text-slate-50">
+			<div class="flex flex-col lg:flex-row p-12 justify-center items-center space-x-10 bg-black/35">
+				<div class="flex flex-col justify-center items-center">
+					<div>
+						<img src="./bahan/13 ROHANI.PNG" class="max-w-[300px]">
+					</div>
+					<h1 class="text-3xl font-bold text-center w-[25ch]">
+						Rohani
+					</h1>
+				</div>
+				<div class="flex flex-1">
+					<ul class="grid grid-cols-1 lg:grid-cols-2 w-full px-6 list-outside list-disc gap-x-8 gap-y-2 text-2xl">
+						<li>Doa Pagi</li>
+						<li>Fun Day</li>
+						<li>Itikaf</li>
+						<li>Kultum</li>
+						<li>Doa Bersama</li>
+						<li>Piket Islam</li>
+						<li>Mading Islam</li>
+						<li>Sedekah Jumat</li>
+						<li>Thamrin Berbagi</li>
+						<li>Ramadhan Berbagi</li>
+						<li>Pesantren Ramadhan</li>
+						<li>ROHKRIS Homecoming</li>
+						<li>Komik Rohani (KORAN)</li>
+						<li>Bina Iman Pasraman Hindu</li>
+						<li>Malam Bina Iman dan Takwa</li>
+						<li>Media Sosial Dakwah Islam</li>
+						<li>Kegiatan Ibadah Pagi Hindu</li>
+						<li>Kebaktian Bersama Orang Tua</li>
+						<li>Kebaktian dan Perayaan Natal</li>
+						<li>Official Account Rohani Kristen</li>
+						<li>Christian Magazine (Christgazine)</li>
+						<li>Peringatan Hari Besar Islam (PHBI)</li>
+						<li>Perayaan Paskah dan Retreat (PASREAT)</li>
+						<li>Latihan Dasar Kepemimpinan Rohis (LDKR)</li>
+						<li>Hari Ibadah Khusus Menyatu Antara Hati (HIKMAT)</li>
+						<li>Pengawasan Kegiatan Ekstrakurikuler (Tahfidz Putra, Tahfidz Putri, Keputrian, Rohani Islam, Rohani Kristen, Rohani Hindu)</li>
+					</ul>
+				</div>
+			</div>
         </div>
     </main>
-	
-    <!-- <div class="dekstop">
-		<div class="k3or">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/07 K3OR.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Sports and Creativity Week (TSC)</li>
-						<li>Jakarta Festival by Thamrin (JVLYN)</li>
-						<li>Thamrin Olympiad and Cup (TOC)</li>
-						<li>Perayaan Hari Guru</li>
-						<li>Thamgoods</li>
-					</ul>
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Soulcrave </li>
-						<li>Thamrin Family Gathering</li>
-						<li>Pengawasan ekstrakurikuler band, basket, futsal, pencak silat, dan renang</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	
-		<div class="sasbud">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Culture Festival</li>
-						<li>Festival Lomba seni siswa Sekolah (FLS3)</li>
-						<li>Aksaradhaya</li>
-						<li>Thamrin Sastra Fair</li>
-						<li>Listerasyik!</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (English Club, Tari Tradisional, Teater, dan Paduan
-							Suara)</li>
-					</ul>
-				</div>
-				<div class="columnleft">
-					<img src="/bahan/08 SASTRA BUDAYA.png" class="logo" alt="">
-				</div>
-			</section>
-		</div>
-	
-		<div class="pudo">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/09 PUDO.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<div class="innercolumn">
-						<ul>
-							<li>Feeds Instagram</li>
-							<li>VELDA (Vlog Elang Muda)</li>
-							<li>Pud - Ups (Pudo Update)</li>
-							<li>Website</li>
-							<li>Thamrin Podcast</li>
-	
-						</ul>
-					</div>
-					<div class="blank">
-						
-					</div>
-				</div>
-
-				
-			</section>
-		</div>
-
-		<div class="akad">
-			<section class="columnsleft">
-				
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Homecoming</li>
-						<li>Open House</li>
-						<li>Thamrin Knowledge Invasion (THANOS)</li>
-						<li>Mading Akademis</li>
-						<li>Koordinasi Lomba</li>
-						<li>Olim Sorting Hat</li>
-
-					</ul>
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Hall of Fame</li>
-						<li>Mamacu Kakacu</li>
-						<li>Publikasi Prestasi</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (Kelompok Ilmiah Remaja)</li>
-					</ul>
-				</div>
-				<div class="columnleft">
-					<img src="/bahan/10 AKADEMIS.png" class="logo" alt="">
-				</div>
-			</section>
-		</div>
-
-		<div class="dhl">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/11 DHL.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Masa Pengenalan Lingkungan Sekolah</li>
-						<li>Rangkaian Latihan Dasar Kepemimpinan Siswa dan Kaderisasi</li>
-						<li>Studi Banding</li>
-						<li>Student Council Conference (SCORENCE)</li>
-						<li>A Day of Environment and Human Rights (DONUTS)</li>
-
-					</ul>
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Inspeksi dan Patroli Lingkungan (SPEKTROL)</li>
-						<li>Peduli Lingkungan Thamrin (PELITHA)</li>
-						<li>Keluarga Thamrin Peduli (KeThaPel)</li>
-						<li>Mading DHL</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (Pramuka Putra dan Putri, Paskibra)</li>
-					</ul>
-				</div>
-				
-			</section>
-		</div>
-
-		<div class="asrama">
-			<section class="columnsleft">
-				
-				<div class="columnleft">
-					<ul>
-						<li>Malam Indah Nostalgia Akhir Tahun (MINAT)</li>
-						<li>Masa Pengenalan Lingkungan Asrama (MPLA)</li>
-						<li>Ultah Bareng Thamrin</li>
-						<li>Thamrin Bingo</li>
-						<li>PEPATHA (Peduli Plastik Thamrin)</li>
-
-					</ul>
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Pikachu O'lliday</li>
-						<li>Pengelolaan Konten Asrama (OA LINE, Instagram Daily)</li>
-					</ul>
-				</div>
-				<div class="columnleft">
-					<img src="/bahan/12 ASRAMA.png" class="logo" alt="">
-				</div>
-			</section>
-		</div>
-
-		<div class="rohani">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/13 ROHANI.PNG" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Berbagi</li>
-						<li>Doa Bersama</li>
-						<li>Komik Rohani (KORAN)</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (Tahfidz Putra, Tahfidz Putri, Keputrian, Rohani Islam, Rohani Kristen, Rohani Hindu)
-						</li>
-						<li>Ramadhan Berbagi</li>
-						<li>Peringatan Hari Besar Islam (PHBI)</li>
-						<li>Pesantren Ramadhan</li>
-						<li>Malam Bina Iman dan Takwa</li>
-						<li>Latihan Dasar Kepemimpinan Rohis (LDKR)</li>
-						<li>Mading Islam</li>
-						<li>Kultum</li>
-						<li>Sedekah Jumat</li>
-						<li>Media Sosial Dakwah Islam</li>
-						<li>Piket Islam</li>
-						<li>Itikaf</li>
-					</ul>
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Perayaan Paskah dan Retreat (PASREAT)</li>
-						<li>Kebaktian dan Perayaan Natal</li>
-						<li>ROHKRIS Homecoming</li>
-						<li>Kebaktian Bersama Orang Tua</li>
-						<li>Fun Day</li>
-						<li>Christian Magazine (Christgazine)</li>
-						<li>Hari Ibadah Khusus Menyatu Antara Hati (HIKMAT)</li>
-						<li>Doa Pagi</li>
-						<li>Official Account Rohani Kristen</li>
-						<li>Bina Iman Pasraman Hindu</li>
-						<li>Kegiatan Ibadah Pagi Hindu</li>
-					</ul>
-				</div>
-				
-			</section>
-		</div>
-	</div>
-
-	<div class="mobile">
-		<div class="k3or">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/07 K3OR.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Sports and Creativity Week (TSC)</li>
-						<li>Jakarta Festival by Thamrin (JVLYN)</li>
-						<li>Thamrin Olympiad and Cup (TOC)</li>
-						<li>Perayaan Hari Guru</li>
-						<li>Thamgoods</li>
-						<li>Soulcrave </li>
-						<li>Thamrin Family Gathering</li>
-						<li>Pengawasan ekstrakurikuler band, basket, futsal, pencak silat, dan renang</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	
-		<div class="sasbud">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/08 SASTRA BUDAYA.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Culture Festival</li>
-						<li>Festival Lomba seni siswa Sekolah (FLS3)</li>
-						<li>Aksaradhaya</li>
-						<li>Thamrin Sastra Fair</li>
-						<li>Listerasyik!</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (English Club, Tari Tradisional, Teater, dan Paduan
-							Suara)</li>
-					</ul>
-				</div>
-				
-			</section>
-		</div>
-	
-		<div class="pudo">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/09 PUDO.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<div class="innercolumn">
-						<ul>
-							<li>Feeds Instagram</li>
-							<li>VELDA (Vlog Elang Muda)</li>
-							<li>Pud – Ups (Pudo Update)</li>
-							<li>Website</li>
-							<li>Thamrin Podcast</li>
-	
-						</ul>
-					</div>
-				</div>
-
-				
-			</section>
-		</div>
-
-		<div class="akad">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/10 AKADEMIS.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Homecoming</li>
-						<li>Open House</li>
-						<li>Thamrin Knowledge Invasion (THANOS)</li>
-						<li>Mading Akademis</li>
-						<li>Koordinasi Lomba</li>
-						<li>Olim Sorting Hat</li>
-						<li>Hall of Fame</li>
-						<li>Mamacu Kakacu</li>
-						<li>Publikasi Prestasi</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (Kelompok Ilmiah Remaja)</li>
-					</ul>
-				</div>
-				
-			</section>
-		</div>
-
-		<div class="dhl">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/11 DHL.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Masa Pengenalan Lingkungan Sekolah</li>
-						<li>Rangkaian Latihan Dasar Kepemimpinan Siswa dan Kaderisasi</li>
-						<li>Studi Banding</li>
-						<li>Student Council Conference (SCORENCE)</li>
-						<li>A Day of Environment and Human Rights (DONUTS)</li>
-						<li>Inspeksi dan Patroli Lingkungan (SPEKTROL)</li>
-						<li>Peduli Lingkungan Thamrin (PELITHA)</li>
-						<li>Keluarga Thamrin Peduli (KeThaPel)</li>
-						<li>Mading DHL</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (Pramuka Putra dan Putri, Paskibra)</li>
-					</ul>
-				</div>
-				
-			</section>
-		</div>
-
-		<div class="asrama">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/12 ASRAMA.png" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Malam Indah Nostalgia Akhir Tahun (MINAT)</li>
-						<li>Masa Pengenalan Lingkungan Asrama (MPLA)</li>
-						<li>Ultah Bareng Thamrin</li>
-						<li>Thamrin Bingo</li>
-						<li>PEPATHA (Peduli Plastik Thamrin)</li>
-						<li>Pikachu O'lliday</li>
-						<li>Pengelolaan Konten Asrama (OA LINE, Instagram Daily)</li>
-					</ul>
-				</div>
-				
-			</section>
-		</div>
-
-		<div class="rohani">
-			<section class="columnsleft">
-				<div class="columnleft">
-					<img src="/bahan/13 ROHANI.PNG" class="logo" alt="">
-				</div>
-				<div class="columnleft">
-					<ul>
-						<li>Thamrin Berbagi</li>
-						<li>Doa Bersama</li>
-						<li>Komik Rohani (KORAN)</li>
-						<li>Pengawasan Kegiatan Ekstrakurikuler (Tahfidz Putra, Tahfidz Putri, Keputrian, Rohani Islam, Rohani Kristen, Rohani Hindu)
-						</li>
-						<li>Ramadhan Berbagi</li>
-						<li>Peringatan Hari Besar Islam (PHBI)</li>
-						<li>Pesantren Ramadhan</li>
-						<li>Malam Bina Iman dan Takwa</li>
-						<li>Latihan Dasar Kepemimpinan Rohis (LDKR)</li>
-						<li>Mading Islam</li>
-						<li>Kultum</li>
-						<li>Sedekah Jumat</li>
-						<li>Media Sosial Dakwah Islam</li>
-						<li>Piket Islam</li>
-						<li>Itikaf</li>
-						<li>Perayaan Paskah dan Retreat (PASREAT)</li>
-						<li>Kebaktian dan Perayaan Natal</li>
-						<li>ROHKRIS Homecoming</li>
-						<li>Kebaktian Bersama Orang Tua</li>
-						<li>Fun Day</li>
-						<li>Christian Magazine (Christgazine)</li>
-						<li>Hari Ibadah Khusus Menyatu Antara Hati (HIKMAT)</li>
-						<li>Doa Pagi</li>
-						<li>Official Account Rohani Kristen</li>
-						<li>Bina Iman Pasraman Hindu</li>
-						<li>Kegiatan Ibadah Pagi Hindu</li>
-					</ul>
-				</div>
-				
-			</section>
-		</div>
-
-		
-	</div> -->
-    
 	<nav class="flex flex-col xl:flex-row justify-center items-center p-4 bg-gradient-to-b from-bottompage-red-start to-bottompage-red-end text-white">
 		<header class="flex flex-column justify-center items-center m-8">
 			<h1 class="text-4xl font-bold">
@@ -497,11 +268,11 @@
 					<div>
 						<img src="./bahan/instagram.png" class="max-w-[40px]">
 					</div>
-					<div class="text-slate-50 text-xl">
-						<a class="ig1" href="https://www.instagram.com/osismpkthamrin/" target="_blank">
+					<div class="flex flex-col text-slate-50 text-xl">
+						<a href="https://www.instagram.com/osismpkthamrin/" target="_blank">
 							@osismpkthamrin
 						</a>
-						<a  class="ig2" href="https://www.instagram.com/smanumht/" target="_blank">
+						<a href="https://www.instagram.com/smanumht/" target="_blank">
 							@smanumht
 						</a>
 					</div>
@@ -510,11 +281,11 @@
 					<div>
 						<img src="./bahan/email.png" class="max-w-[40px]">
 					</div>
-					<div class="text-slate-50 text-xl">
-						<a class="em1" href="mailto: osismhthamrin@gmail.com">
+					<div class="flex flex-col text-slate-50 text-xl">
+						<a href="mailto: osismhthamrin@gmail.com" target="_blank">
 							osismhthamrin@gmail.com
 						</a>
-						<a class="em2" href="mailto: smanu_mht@yahoo.co.id">
+						<a href="mailto: smanu_mht@yahoo.co.id" target="_blank">
 							smanu_mht@yahoo.co.id
 						</a>
 					</div>
